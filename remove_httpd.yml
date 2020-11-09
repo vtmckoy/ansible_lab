@@ -1,0 +1,14 @@
+---
+
+- hosts:  all
+  become:  true
+  tasks:
+
+  - name:  update repository index
+    dnf:
+      update_cache:  True
+
+  - name:  remove httpd package
+    dnf:
+      name:  httpd
+      state:  absent
