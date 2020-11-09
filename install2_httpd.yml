@@ -1,0 +1,14 @@
+---
+
+- hosts:  all
+  become:  true
+  tasks:
+
+  - name:  update repository index
+    dnf:
+      update_cache:  True
+
+  - name: Install one specific version of Apache
+    dnf: 
+      name: httpd.x86_64
+      state: latest
