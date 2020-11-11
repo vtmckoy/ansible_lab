@@ -4,13 +4,10 @@
   become:  true
   tasks:
 
-  - name:  update repository index
-    dnf:
-      update_cache:  yes
-    when:  ansible_distribution == "CentOS"
-
-  - name:  install httpd package
-    dnf:
-      name:  httpd
+  - name:  install httpd and php packages for Centos
+    package:
+      name:  
+        - "{{ httpd_package }}"
+        - "{{ php_package }}"
       state:  latest
-    when:  ansible_distribution == "CentOS"
+      update_cache:  yes

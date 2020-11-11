@@ -1,0 +1,3 @@
+appserver1 httpd_package=httpd php_package=php
+192.168.1.231 httpd_package=httpd php_package=php
+#labhostserver

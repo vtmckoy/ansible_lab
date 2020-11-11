@@ -1,2 +1,8 @@
-appserver1
+[web_servers]
+192.168.1.231 
+
+[file_servers]
+appserver1 
+
+[db_servers]
 #labhostserver
