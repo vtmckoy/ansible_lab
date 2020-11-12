@@ -1,8 +1,11 @@
 [web_servers]
 192.168.1.231 
 
+[db_servers]
+#labhostserver
+
 [file_servers]
 appserver1 
 
-[db_servers]
-#labhostserver
+[workstations]
+192.168.1.231 
