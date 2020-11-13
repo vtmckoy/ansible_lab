@@ -1,0 +1,5 @@
+- name:  install samba package (the package name is the same name on Centos & Ubunta, so don't need to specify dnf, apt or when)
+  tags:  samba
+  package:
+    name:  samba
+    state:  latest
